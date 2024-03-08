@@ -20,10 +20,10 @@ export default function RootLayout({
     const html = render(<WelcomeEmail />, {
         pretty: true,
     });
-  
+
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>{html}</body>
         </html>
     );
 }
